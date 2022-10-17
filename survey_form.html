@@ -1,0 +1,65 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Build a Survey form></title>
+   <link rel="stylesheet" href="styles.css" />
+   </head>
+   <body>
+     <h1 id="title">FreeCodeCamp Survey Form</h1>
+     <p id="description"> Survey reveals numbers not seen before</p>
+   <form action ='https://survey-form.freecodecamp.org'id="survey-form">
+     <fieldset>
+       <label id="name-label"> Enter Your Full Name: <input id="name"type="name" name="full-name" placeholder="Enter Your Name"required /></label><br>
+<!--Please check for the amount of names somehow-->        
+        <label id="email-label">Enter Your Email: <input id="email" name="email"type="email"placeholder="Enter Your Email" required /></label><br>
+<!--emails is an easy to communicate with interested parties-->          
+        <label id="number-label">Age (optional): <input id="number"type="number" name="number" min="13" max="120" placeholder="Age"/>
+			  </label><br>
+<!--age category will reveal various data points-->
+  <label>Which option best describes your current status? <br>
+    <select id="dropdown">
+          <option value="">(select one)</option>
+          <option value="1">Student</option>
+          <option value="2">Full Time Job</option>
+          <option value="3">Full Time Learner</option>
+          <option value="4">Prefer Not TO Say</option>
+        <option value="5"> Other</option>
+        </select>
+      </label>
+      </fieldset>
+      <fieldset>
+        <label>Would you recommend freecodecamp to a friend? <br>
+        <label><input type="radio" name="account-type" class="inline"value="account-type"/> Definitely</label> <br>
+      <label><input type="radio" name="account-type" class="inline"value="account-type"/> No</label> <br>
+      <label><input type="radio" name="account-type"class="inline"value="account-type"/> Maybe </label>  
+      </fieldset>
+     <fieldset>
+       <label> How can we improve FreeCodeCamp? (check all that apply) <br>
+          <input type="checkbox" name="options" class="inline" value="1">Front-End Projects</input> <br>
+          <input type="checkbox" name="options" class="inline" value="2">Back-End Projects</input> <br>
+          <input type="checkbox" name="options" class="inline" value="3">Data Visualization</input> <br>
+          <input type="checkbox" name="options" class="inline" value="4">Challenges</input><br>
+          <input type="checkbox" name="options" class="inline" value="5">Open Source Community</input> <br>
+          <input type="checkbox" name="options" class="inline" value="6">FreeCodeCamp Forum</input> <br>
+          <input type="checkbox" name="options" class="inline" 
+value="7">Youtube Videos</input><br>
+         <input type="checkbox" name="options" class="inline"
+value="8">In Person Meetings</input><br>
+         <input type="checkbox"
+name="options" class="inline"
+value="9">Google Search</input><br> 
+         <input type="checkbox"
+name="options" class="inline"
+value= "10">Additional Courses<input><br>          
+        </label>
+        </fieldset>
+        <fieldset>
+        <label>Any Comments or Suggestions!
+          <textarea name="useful info" rows="3" cols="30" placeholder= "put your ideas here"></textarea>
+        </label>
+         </fieldset>
+       <input id="submit" type="submit" value="submit"> 
+        </form>
+        </body>
+        </html>
