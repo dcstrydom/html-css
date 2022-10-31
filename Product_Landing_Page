@@ -1,0 +1,34 @@
+<header id="header">
+  <img id="header-img" src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.dgUOl3msgaD3NagRN-HifwHaEV%26pid%3DApi&f=1&ipt=1d8b0a78b769726162e8950a55f3fa23e516b2f2524f9f561811eb2a73680fdb&ipo=images"></img>
+  <nav id="nav-bar">
+    <a class="nav-link" href="#section-video">To section video</a>
+    <a class="nav-link" href="#about-the-video">What is this about?</a>
+    <a class="nav-link" href="#email-submit">Let's get in contact</a>
+  </nav>
+</header>
+<body>
+  <section id="section-video">
+    <video id="video" width="320" height="240" controls>
+      <source src="movie.mp4" type="video/mp4">
+    </video>
+  </section>
+  <section id="about-the-video">
+
+  </section>
+  <section id="email-submit">
+    <form id="form" action="https://www.freecodecamp.com/email-submit">
+      <input type="email" name="email" id="email" placeholder="Enter email">
+      <input id="submit" type="submit" >
+    </form>
+  </section>
+
+</body>
+<style>
+  .nav-link{
+    display:flex;
+  }
+  #nav-bar{
+    position:fixed;
+    top:0px;
+  }
+</style>
